@@ -1,6 +1,6 @@
 # React Timer with basic hooks
 
-** This project is for mastering useEffect and other hooks **
+**This project is for mastering useEffect and other hooks**
 
 ## Learnt about :
 
