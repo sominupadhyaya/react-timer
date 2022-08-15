@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-
+import '../styles/Timer.css'
 const BadTimer = () => {
   const [time, setTime] = useState<number>(0)
 
@@ -10,9 +10,8 @@ const BadTimer = () => {
     } , [])
   return (
     <>
-    <div>BadTimer</div>
-    <h1>Bad Timer</h1>
-    <div>{time.toFixed()}</div>
+    <h1>Bad Timer : </h1>
+    <h2>{time.toFixed()}</h2>
     </>
   )
 }

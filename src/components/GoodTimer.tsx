@@ -1,5 +1,5 @@
 import { useEffect , useState } from "react"
-
+import '../styles/Timer.css'
 const GoodTimer = () => {
     const [time, setTime] = useState<number>(0)
     const [timerState, setTimerState] = useState<boolean>(false)
@@ -17,13 +17,13 @@ const GoodTimer = () => {
     
     
     return (
-    <>
-    <div>GoodTimer</div>
-    <h1>Good Timer</h1>
-    <div>{time.toFixed()}</div>
+    <> 
+    <h1>Good Timer: </h1>
+    <h2>{time.toFixed()}</h2>
+
     <button onClick={() => setTimerState(true)}>Stop Time</button>
-    <button onClick={() => setTimerState(false)}>Start Time</button>
-    </>
+    <button onClick={() => setTimerState(false)}>Start Time</button> 
+    </> 
   )
 }
 
