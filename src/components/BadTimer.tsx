@@ -11,7 +11,7 @@ const BadTimer = () => {
   return (
     <>
     <div>BadTimer</div>
-    <h1>Timer</h1>
+    <h1>Bad Timer</h1>
     <div>{time.toFixed()}</div>
     </>
   )
