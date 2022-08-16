@@ -8,3 +8,4 @@
 
 - Cleanup function provided by useEffect after unmounting a component
 
+- How the react strict mode works
