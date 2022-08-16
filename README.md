@@ -22,17 +22,22 @@ when the component is mounted
 This behaviour only occurs in StrictMode.
 
 **Is this good or bad?**
-- It is actually good as we can catch various errors in our app
+
+It is actually good as we can catch various errors in our app
 related to our components.
 
 For example :
 In this counter example, if we dont keep a cleanup function after the
-setInterval call has occured, the previous effect will keep on running
+setInterval call has occured, the previous effect keeps on running
 and the time will be doubled. 
 
 This will be shown by the strict mode and we can easily catch and resolve
 this problem.
 
-So, in general, this is actually something good.
 
+**How can we solve the problem of the effect staying?**
 
+`return () => clearInterval(interval)`
+
+if we pass a cleanup function by passing it the interval,
+it will clear the effect(interval) after it has been unmounted
